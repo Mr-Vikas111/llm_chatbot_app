@@ -98,6 +98,41 @@ python seed.py
 uvicorn main:app --reload
 ```
 
+### 🔹 Example cURL Request
+To send a POST request to the `/query` endpoint with a JSON payload:
+
+```bash
+curl -X POST http://localhost:8000/query \
+     -H "Content-Type: application/json" \
+     -d '{"user_query": "Show me all female customers from Mumbai" }'
+
+```
+Payload
+
+```json
+{
+  "user_query": "Show me all female customers from Mumbai"
+}
+```
+
+Response
+
+```json
+{
+    "sql": "SELECT * \nFROM customers \nWHERE gender = 'Female' AND location = 'Mumbai';",
+    "results": [
+        [
+            3,
+            "Megha",
+            "Female",
+            "Mumbai"
+        ]
+    ]
+}
+
+```
+
+
 # 🌐 Frontend Setup (React)
 
 ### 🔹 Prerequisites
