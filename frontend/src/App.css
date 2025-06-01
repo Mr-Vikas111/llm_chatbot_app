@@ -1,0 +1,36 @@
+.App {
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  .output {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
