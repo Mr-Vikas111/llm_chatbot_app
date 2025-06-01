@@ -78,6 +78,11 @@ Create a .env file in the backend/ directory:
 
 ```env
 GROQ_API_KEY=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
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=YOUR_DB_NAME
+POSTGRES_USER=YOUR_DB_USER
+POSTGRES_PASSWORD=YOUR_DB_PASSWORD
 ```
 Note:- key will be disable after 24 Hrs.
 
